@@ -1,9 +1,9 @@
-def dfs(graph, start, vistied None):
-    if vistied is None:
-        vistied = set()
+def dfs(graph, start, visited=None):
+    if visited is None:
+        visited = set()
     visited.add(start)
-    print(start, end=" ")
-    for neighbor in graph[start]
+    print(start, end="  ")
+    for neighbor in graph[start]:
        if neighbor not in visited:
-           dfs(graph, neighbor, vistied)
+           dfs(graph, neighbor, visited)
            
